@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(projectRoutes);
 app.use(userRoutes);
 
-const Port = process.env.Port;
+const Port = process.env.PORT || 400;
 
 main()
   .then(() => {
